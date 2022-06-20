@@ -18,12 +18,13 @@ DomElement.prototype.newElem = function () {
     document.body.prepend(div);
   }
   div.style.cssText = `color: white;
-    background: ` + this.bg + `;
-    height: ` + this.height + `px;
-    width: ` + this.width + `px;
+    background: ${this.bg};
+    height: ${this.height}px;
+    width: ${this.width}px;
     text-align: center;
-    font-size: ` + this.fontSize + `px;
-    position: ` + this.position + `;
+    font-size: ${this.fontSize}px;
+    position: ${this.position};
+    cursor: pointer;
   `;
   div.innerHTML = '<span>Нажми на меня и двигай стрелками</span>';
 };
